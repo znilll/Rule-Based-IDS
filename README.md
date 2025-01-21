@@ -16,7 +16,7 @@ User Interface: Provides a simple GUI for user interaction, allowing users to st
 Components
 Imports: The script imports necessary libraries, including Scapy for packet manipulation, Tkinter for the GUI, and collections for data management.
 
-2. Constants:
+Constants:
 DEST_IP: The destination IP address for filtering packets.
 
 EVENT_HANDLERS: A list of common JavaScript event handlers to check for potential XSS attacks.
@@ -25,7 +25,7 @@ XSS_CONTENT: A list of HTML tags and attributes commonly used in XSS attacks.
 
 SQL_INJECTION_CONTENT: A list of SQL keywords and patterns used to identify SQL Injection attempts.
 
-4. Functions:
+Functions:
 to_lower(value): Converts a string to lowercase.
 
 load_rules(rule_file): Loads detection rules from a specified file and prepares them for analysis.
@@ -34,7 +34,7 @@ extract_features(packet): Extracts relevant features from captured packets for a
 
 match_rule(features, rule, packet_id): Compares extracted features against defined rules to determine matches.
 
-6. Classes:
+Classes:
 PacketProcessor: Handles the processing of captured packets, including feature extraction, rule matching, and maintaining statistics on detected attacks.
 
 PacketSnifferGUI: Manages the GUI components, allowing users to start and stop packet sniffing and display output.
