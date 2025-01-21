@@ -1,0 +1,16 @@
+
+DDOS, TCP, SYN, any, {DEST_IP}, 80, len=60, is_unique=1, pps=5000
+
+DOS, TCP, SYN, any, {DEST_IP}, 80, len=60, is_unique=0, pps=5000
+
+#Windows
+SCANNING, TCP, SYN, any, {DEST_IP}, any, len=48, is_unique=0, pps=800
+
+PING(request), ICMP, 8, any, {DEST_IP}, any, len=any, is_unique=0
+
+PING(reply), ICMP, 0, any, {DEST_IP}, any, len=any, is_unique=0
+
+XSS, HTTP, GET, any, any, any, is_unique=0
+
+
+SQL_INJECTION, HTTP, GET, any, any, any, is_unique=0
